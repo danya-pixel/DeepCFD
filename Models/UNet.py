@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from torch.nn.utils import weight_norm
-from Models.AutoEncoder import create_layer
+from .AutoEncoder import create_layer
 
 
 def create_encoder_block(in_channels, out_channels, kernel_size, wn=True, bn=True,
